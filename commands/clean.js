@@ -9,5 +9,5 @@ function logCleanCommand(err, stdout, stderr)
 
 module.exports = function clean(entry) {
 	console.log('clean: ' + entry);
-	npmRun.exec('rimraf '+entry, {cwd: __dirname}, logCleanCommand);
+	npmRun.exec('rimraf '+ entry, {cwd: __dirname}, logCleanCommand);
 };

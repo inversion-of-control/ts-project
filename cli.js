@@ -5,12 +5,13 @@
  * ============
 **/
 var commands = require('./commands.js');
+var path = require('path');
 
   	require('yargs')
     .usage('Usage: ts-project [entry]')
     .command('clean [entry]', 
     	 	 'equivalent of mvn:clean', 
-    	 	 { entry: {default: process.cwd() + '/target'}}, 
+    	 	 { entry: {default: path.resolve( process.cwd(), 'target')}}, 
     	 	 function (argv) {commands.clean(argv.entry);})
     //.command('install [entry]', 
     //		 'equivalent of mvn:install', 
