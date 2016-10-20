@@ -10,7 +10,7 @@ var commands = require('./commands.js');
     .usage('Usage: ts-project [entry]')
     .command('clean [entry]', 
     	 	 'equivalent of mvn:clean', 
-    	 	 { name: {default: ''}}, 
+    	 	 { entry: {default: process.cwd() + '/target'}}, 
     	 	 function (argv) {commands.clean(argv.entry);})
     //.command('install [entry]', 
     //		 'equivalent of mvn:install', 
