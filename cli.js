@@ -11,7 +11,7 @@ var commands = require('./commands.js');
     .command('clean [entry]', 
     	 	 'equivalent of mvn:clean', 
     	 	 { name: {default: ''}}, 
-    	 	 function (argv) {commands.build(argv.entry);})
+    	 	 function (argv) {commands.clean(argv.entry);})
     //.command('install [entry]', 
     //		 'equivalent of mvn:install', 
     //		 { name: {default: ''}}, 
