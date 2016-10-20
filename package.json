@@ -1,11 +1,8 @@
 {
   "name": "ts-project",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "",
-  "main": "commands.js",
-  "scripts": {
-    "clean": "./cli.js clean"
-  },
+  "main": "cli.js",
   "bin": {
     "ts-project": "./cli.js"
   },
